@@ -26,6 +26,16 @@ This data set specifies, for each activity, and each subject participating in th
 * 'codebook.md': Shows information about the features included in the data set 'tidy_dataset.txt'
 
 
+### What the analysis file 'run_analysis.R' does (for further insight, see the actual commented code):
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement by selecting the measurements whose naim contain mean() or std().
+3. Merges the labels for the training and test sets in a data array with one column. Then it substitutes the labels by the activity names and binds the resulting column to the data set created in step 2.
+4. Labels the data set with descriptive variable names taken from codebook of the original data set.
+5. Creates a second independent data set with the average of each variable for each activity and each subject by previously adding a column with the subject identifiers.
+Finally, it exports this second independent data set to 'tidy_dataset.txt'.
+
+
 ### Notes: 
 
 Features are normalized and bounded within [-1,1].

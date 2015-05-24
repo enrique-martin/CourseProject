@@ -38,8 +38,8 @@ These add up to 33 signals.
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+* mean(): Mean value
+* std(): Standard deviation
 
 These leads to 66 different features in the data set. Its average values are presented for each "Activity" name and "Subject" identifier.
 
